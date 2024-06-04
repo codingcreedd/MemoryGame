@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Montserrat';
+  padding: 2rem 0 2rem 0;
+}
+
+.gold{
+  background: gold;
+}
+
+.tgold{
+  color: gold;
+}
