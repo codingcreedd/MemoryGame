@@ -33,7 +33,7 @@ const MainPage = () => {
                         </div>
                         <p className="text-sm">2024 UCL Winners vs Dortmund</p>
                         <h1 className="text-7xl font-bold mt-6 max-w-[70%]">Real Madrid Football Club</h1>
-                        <button className="bg-black gold text-black font-bold px-6 py-3 w-1/4 mt-8 relative"
+                        <div className="bg-black gold text-black font-bold px-6 py-3 w-1/4 mt-8 relative cursor-pointer"
                         onClick={() => {setShowDifficulty(true); setShowReal(!showReal); setShowBarca(false)}}>
                             Play As Real Madrid
                             {
@@ -43,7 +43,7 @@ const MainPage = () => {
                                     null
                                 )
                             }
-                        </button>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -68,7 +68,7 @@ const MainPage = () => {
                                 <img src="https://i.ibb.co/7jt8vZ9/Untitled-removebg-preview.png" alt="Untitled-removebg-preview" border="0" />                            </div>
                             <p className="text-sm font-bold">It is all about the history</p>
                             <h1 className="text-7xl font-bold mt-6 text-red-600">FC Barcelona</h1>
-                            <button className="bg-blue-600 text-white font-bold px-6 py-3 w-1/2 mt-8 relative"
+                            <div className="bg-blue-600 text-white font-bold px-6 py-3 w-1/2 mt-8 relative cursor-pointer"
                             onClick={() => {setShowDifficulty(true); setShowBarca(!showBarca); setShowReal(false)}}>
                                 Play As Barcelona
                                 {
@@ -78,7 +78,7 @@ const MainPage = () => {
                                         null
                                     )
                                 }   
-                            </button>
+                            </div>
                         </div>
                     </div>
             </div>
