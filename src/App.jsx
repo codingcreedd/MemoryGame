@@ -12,9 +12,9 @@ function App() {
         <div className={`${(difficulty === '') && 'border-blue-600 border-2 m-2'}`}>
           <div className={`${(difficulty === '') && 'border-red-600 border-2 m-2 pb-4'}`}>
               {
-                playerTeam === 'realmadrid' ? (
+                (playerTeam === 'realmadrid') ? (
                   <GamePage  team={playerTeam} className="bg-gray-300" />
-                ) : playerTeam === 'barcelona' ? (
+                ) : (playerTeam === 'barcelona') ? (
                   <GamePage team={playerTeam} className="bgfcb" />
                 ) : (
                   <MainPage />

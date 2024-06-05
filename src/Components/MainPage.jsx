@@ -5,11 +5,9 @@ import { Context } from "./Context";
 const MainPage = () => {
 
     const [showDifficulty, setShowDifficulty] = useState(false);
-    const [showBarca, setShowBarca] = useState(false);
-    const [showReal, setShowReal] = useState(false);
 
-    const {difficulty, setDifficulty, playerTeam, setPlayerTeam} = useContext(Context);
-
+    const {setDifficulty, setPlayerTeam, showBarca, setShowBarca, showReal, setShowReal} = useContext(Context);
+    
   return (
     <>
         <main className="w-full h-screen flex flex-col px-10 py-6">
@@ -65,7 +63,7 @@ const MainPage = () => {
                     <div className="w-1/2 flex">
                         <div className="flex flex-col mb-14">
                             <div className="flex-grow">
-                                <img src="https://i.ibb.co/7jt8vZ9/Untitled-removebg-preview.png" alt="Untitled-removebg-preview" border="0" />                            </div>
+                                <img src="https://i.ibb.co/7jt8vZ9/Untitled-removebg-preview.png" alt="Untitled-removebg-preview" border="0" width={1000} height={1000} className="object-contain"/>                            </div>
                             <p className="text-sm font-bold">It is all about the history</p>
                             <h1 className="text-7xl font-bold mt-6 text-red-600">FC Barcelona</h1>
                             <div className="bg-blue-600 text-white font-bold px-6 py-3 w-1/2 mt-8 relative cursor-pointer"

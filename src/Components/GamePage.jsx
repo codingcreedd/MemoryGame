@@ -7,12 +7,12 @@ const API_KEY = '5357662512394c2881afc872ba7a8620';
 
 const GamePage = ({team, className}) => {
 
-    const [players, setPlayers] = useState([]);
     const [loading, setLoading] = useState(true);
 
-   const classes = `${className || ''} px-10 py-6 h-screen flex flex-col`;
+   const classes = `${className || ''} px-10 py-6 h-full flex flex-col`;
 
-   const {difficulty, score} = useContext(Context);
+   const {difficulty, score, players, setPlayers} = useContext(Context);
+   
 
    const loopController = Math.min(difficulty === 'easy'? 6 : difficulty === 'medium'? 12 : players.length, players.length);
 
