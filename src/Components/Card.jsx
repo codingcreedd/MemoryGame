@@ -5,7 +5,7 @@ const swap = (arr, i, j) => {
     [arr[i], arr[j]] = [arr[j], arr[i]];
 }
 
-const Card = ({id, name, position, nationality, role, imgURL, className, clubLogo}) => {
+const Card = ({name, position, nationality, role, className, clubLogo}) => {
 
     const [pressCount, setPressCount] = useState(0);
     const {setLostGame, score, setScore, difficulty,  setDifficulty, setPlayerTeam, setCardNumber, setShowBarca, setShowReal,
