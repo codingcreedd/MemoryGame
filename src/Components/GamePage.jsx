@@ -30,7 +30,7 @@ const GamePage = ({team, className}) => {
 
         let elements = [];
         for(let i = 0; i < loopController; i++){
-            elements.push(<Card id={players[i].id} name={players[i].name} position={players[i].position} nationality={players[i].nationality} role={players[i].role}
+            elements.push(<Card key={players[i].id} id={players[i].id} name={players[i].name} position={players[i].position} nationality={players[i].nationality} role={players[i].role}
             clubLogo={team === 'realmadrid' ? 'https://i.ibb.co/9TgLYnN/rmlogo-removebg-preview.png' : 'https://i.ibb.co/7jt8vZ9/Untitled-removebg-preview.png'}/>)
         }
 
