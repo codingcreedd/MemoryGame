@@ -7,7 +7,8 @@ const getFootballData = async (apiKey, teamID) => {
 
         const response = await fetch(url, {
             method: 'GET',
-            headers: headers
+            headers: headers,
+            mode: 'cors'
         });
 
         const data = await response.json();
